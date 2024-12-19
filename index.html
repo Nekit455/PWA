@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="YourPassword" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+  <header>
+    <h1>Password Manager</h1>
+  </header>
+  <main>
+    <section id="password-list">
+      <h2>Saved Passwords</h2>
+      <ul id="passwords">
+        <!-- Password entries will appear here -->
+      </ul>
+    </section>
+    <section id="add-password">
+      <h2>Add New Password</h2>
+      <form id="password-form">
+        <label for="site">Site URL:</label>
+        <input type="url" id="site" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="text" id="password" required>
+        <button type="button" id="generate-password">Generate Password</button>
+        <button type="submit">Save</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
